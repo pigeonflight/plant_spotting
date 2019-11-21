@@ -13,10 +13,12 @@ class MyApp extends StatelessWidget {
           primarySwatch: colorCustom,
           scaffoldBackgroundColor: Color(0xffFEEBEE)),
       home: Scaffold(
-        appBar: AppBar(title: Text("Plant Spotting")),
+        appBar: AppBar(title: Text("Plant Spotting")
+        //TODO add actions: add button),
         body: SafeArea(
           minimum: EdgeInsets.all(16),
-          child: Text("Plant Spotting"),
+          child: Text("Plant Spotting"), // TODO replace with a center widget 
+                                      // and a circular progress indicator widget
         ),
       ),
     );

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'color.dart';
 
 void main() => runApp(MyApp());
 
@@ -9,8 +10,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        primarySwatch: Colors.pink,
-      ),
+          primarySwatch: colorCustom,
+          scaffoldBackgroundColor: Color(0xffFEEBEE)),
       home: Scaffold(
         appBar: AppBar(title: Text("Plant Spotting")),
         body: SafeArea(

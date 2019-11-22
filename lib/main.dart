@@ -15,12 +15,16 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(
           title: Text("Plant Spotting"),
+          actions: <Widget>[
+            IconButton(
+              icon: Icon(Icons.photo_camera),
+              onPressed: () {},
+            ),
+          ],
         ),
-        //TODO add actions: add button),
         body: SafeArea(
           minimum: EdgeInsets.all(16),
-          child: Text("Plant Spotting"), // TODO replace with a center widget
-          // and a circular progress indicator widget
+          child: CircularProgressIndicator(),
         ),
       ),
     );
